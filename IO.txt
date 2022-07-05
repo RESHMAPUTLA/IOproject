@@ -1,0 +1,151 @@
+while True:
+    class CLERK:
+      
+        def __init__ (self):
+             self.id=int(input("enter the id:"));
+             self.name=input("enter the name:");
+             self.age=int(input("enter the age:"));
+             self.salary=25000;
+             self.designation='clerk';
+        def display(self):
+            print("ID:",self.id);
+            print("NAME:",self.name);
+            print("AGE:",self.age);
+            print("SALARY:",self.salary);
+            print("DESIGNATION:",self.designation);
+        def risesalary(self):
+            self.salary=self.salary+20000;
+            print("Raised salary is:",self.salary);
+        
+    class TESTER:
+        def __init__ (self):
+            self.id=int(input("enter the id"));
+            self.name=input("enter the name");
+            self.age=int(input("enter the age"));
+            self.salary=40000;
+            self.designation='TESTER';
+        def display(self):
+            print("ID:",self.id);
+            print("NAME:",self.name);
+            print("AGE:",self.age);
+            print("SALARY:",self.salary);
+            print("DESIGNATION:",self.designation);
+        def risesalary(self):
+            self.salary=self.salary+50000;
+            print("Raised salary is:",self.salary);
+
+    class DEVELOPER:
+        def __init__ (self):
+            self.id=int(input("enter the id"));
+            self.name=input("enter the name");
+            self.age=int(input("enter the age"));
+            self.salary=25000;
+            self.designation="DEVELOPER";
+        def display(self):
+            print("ID:",self.id);
+            print("NAME:",self.name);
+            print("AGE:",self.age);
+            print("SALARY:",self.salary);
+            print("DESIGNATION:",self.designation);
+        def risesalary(self):
+            self.salary=self.salary+9000
+            print("Raised salary is:",self.salary);
+
+    class MANAGER:
+        def __init__ (self):
+            self.id=int(input("enter the id"));
+            self.name=input("enter the name");
+            self.age=int(input("enter the age"));
+            self.salary=80000;
+            self.designation="MANAGER";
+        def display(self):
+            print("ID:",self.id);
+            print("NAME:",self.name);
+            print("AGE:",self.age);
+            print("SALARY:",self.salary);
+            print("DESIGNATION:",self.designation);
+        def risesalary(self):
+            self.salary=self.salary+10000;
+            print("Raised salary is:",self.salary);
+
+    print("choose the option:\n 1.Create \n 2.Display \n 3.Rise salary \n 4.Exit");
+    opt=int(input("Enter the option:"))
+    if opt==1:
+       print("1.CLERK");
+       print("2.TESTER");
+       print("3.DEVELOPER");
+       print("4.MANAGER");
+       n=int(input("Enter your choice:"))
+       if(n==1):
+        
+          c=CLERK()
+          continue
+       elif n==2:
+          t=TESTER()
+          continue
+       elif n==3:
+          d=DEVELOPER()
+          continue
+       elif n==4:
+          m=MANAGER()
+          continue
+       else:
+          print('wrong choice')
+          continue
+    elif opt==2:
+       print('1.CLERK')
+       print('2.TESTER')
+       print('3.DEVELOPER')
+       print('4.MANAGER')
+       n=int(input('Enter the option'))
+       if(n==1):
+
+            c.display()
+            continue
+       elif n==2:
+
+            t.display()
+            continue
+       elif n==3:
+
+            d.display()
+            continue
+       elif n==4:
+
+            m.display()
+            continue
+       else:
+            
+            print('wrong choice')
+            continue
+        
+    elif opt==3:
+        print('1.CLERK')
+        print('2.TESTER')
+        print('3.DEVELOPER')
+        print('4.MANAGER')
+        n=int(input('Enter the option:'))
+        if(n==1):
+
+            c.risesalary()
+            continue
+        elif n==2:
+
+            t.risesalary()
+            continue
+        elif n==3:
+
+            d.risesalary()
+            continue
+        elif n==4:
+           
+            m.risesalary()
+            continue
+        else:
+            print('wrong choice')
+            continue
+    elif opt==4:
+        print('THANK YOU') 
+        break
+    else:
+        print('wrong choice')
